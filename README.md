@@ -44,3 +44,23 @@ to view the database we just created:
 
          > db.products.find()
          add '.pretty' to format the output
+
+11. Shell vs Drivers
+
+Drivers are a way to communicate with the database using code instead of the shell. Theres a different driver for each different programing language. The core features are the same.
+
+12.   MongoDB + Clients: The Big Picture
+
+                 APPLICATION:
+                    - Frontend(UI)
+                    - Backend(Server)
+                       drivers: (communicates with mongodb server)
+                          - node.jf
+                          - java
+                          - python
+                          - ...
+
+      MongoDB Shell can communicate with the mongodb server as well as the drivers.
+
+                 DATA:
+                    MongoDB Server
