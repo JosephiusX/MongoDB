@@ -67,6 +67,28 @@ Drivers are a way to communicate with the database using code instead of the she
 
 13.   Course Outline
 
-Thinking I should jump to 'CRUD Deep Dive - Create' lesson, or maybe checkout 'Data Schema & Relations' first.
+14.   How To Get The Most Out Of The Course
 
-14. How To Get The Most Out Of The Course
+15.   CRUD & Mongo db
+
+Review this for sure, good review of mongoDb options for CRUD.
+
+26. Understanding "find()" & the Cursor Object
+
+REVIEW THIS
+
+27. Understanding Projection
+
+REVIEW THIS
+
+28. Embedded Documents & Arrays - The Theory
+
+REVIEW THIS
+
+29. Working with Embedded Documents
+
+REVIEW THIS
+
+30. Working with Arrays
+
+REVIEW THIS
