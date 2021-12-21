@@ -64,3 +64,9 @@ Drivers are a way to communicate with the database using code instead of the she
 
                  DATA:
                     MongoDB Server
+
+13.   Course Outline
+
+Thinking I should jump to 'CRUD Deep Dive - Create' lesson, or maybe checkout 'Data Schema & Relations' first.
+
+14. How To Get The Most Out Of The Course
