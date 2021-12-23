@@ -71,15 +71,52 @@ Drivers are a way to communicate with the database using code instead of the she
 
 15.   CRUD & Mongo db
 
+CREATE:
+
+      - insertOne(data, options) : insert ond document into a collection
+      - insertMany(data, options) : insert many documents
+
+UPDATE:
+
+      - updateOne(filter, data, options)
+      - updateMany(filter, data, options)
+      - replaceOne(filter, data, options)
+
+READ:
+
+      - find(filter, options)
+      - findOne(filter, options)
+
+DELETE:
+
+      - deleteOne(filter, options)
+      - deleteMany(filter, options)
+
 Review this for sure, good review of mongoDb options for CRUD.
 
-26. Understanding "find()" & the Cursor Object
+23. Understanding "insertMany()"
 
-REVIEW THIS
+24. Understanding "find()" & the Cursor Object
 
-27. Understanding Projection
+27 Understanding Projection
 
-REVIEW THIS
+lets say we have information in the database that we dont need to show in the application. We can send it all to the application and have it sorted out there but sending unneeded data is a waste of energy.
+
+      - use insertMany to input the resources in lesson 23
+
+We can use 'db.passengers.find()' to see what we added to the collection. Now lets say we just want the names of the passengers. we can use 'passengers.find()' but also add in arguments like so:
+
+      - db.passengers.find({},{name: 1}).prettier()
+
+this requests only the names of the massengers. We leave the first document(argument) empty, then we place the name of the key we want to request (name) and on the other side we put 1 which stands for show
+
+we can exclude something by using the key and 0:
+
+      - db.passengers.fing({}, {name: 1, _id: 0, age: 0}).pretty()
+
+now we get the names without all the id's included,
+
+This data filtering is happening on the mongoDB server before its sent to the app. This is what we want.
 
 28. Embedded Documents & Arrays - The Theory
 
